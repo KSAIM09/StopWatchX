@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './StopWatch.css'
+// import './StopWatch.css'
 
 const StopWatch = () => {
     const [isRunning, setIsRunning] = useState(false);
@@ -41,7 +41,7 @@ const StopWatch = () => {
             
             <h1>StopWatch</h1>
             <div>
-                <span>Time : {formatTime(time)}</span>
+                <span>Time: {formatTime(time)}</span>
             </div>
             <div>
                 <button onClick={startStopHandler}>{isRunning ? 'Stop' : 'Start'}</button>
